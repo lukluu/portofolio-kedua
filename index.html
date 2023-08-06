@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <section class="hero" id="home">
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">
+                    L<span>ukman</span>.
+                </a>
+                <i class='bx bx-menu i'></i>
+                <ul class="navlink">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="mode-toggle">
+                    <i class='bx bx-sun'></i>
+                    <i class='bx bxs-moon'></i>
+                </div>
+            </nav>
+        </div>
+        <div class="container content">
+            <div class="text-content">
+                <div class="main-text">
+                    <p>Halo, saya</p>
+                    <h1>La Ode <span>Lukmana</span></h1>
+                    <p class="type-text">
+                        <span class="text left">saya seorang</span>
+                        <span class=" text right">Mahasiswa</span>
+                    </p>
+                    <div class="action">
+                        <a href="#" class="btn">Hire Me</a>
+                        <a href="#" class="btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="sosmed">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="img-content">
+                <img src="img/2.png" class="main-img">
+                <div class="shape"></div>
+            </div>
+    </section>
+
+    <section id="about">
+
+        <div class="container">
+            <div class="shape"></div>
+            <div class="about-content">
+                <div class="img-about">
+                    <img src="img/saya.jpg" alt="">
+                </div>
+                <div class="text-about">
+                    <h1>Tentang Saya</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa rerum illum ullam nisi alias
+                        aperiam
+                        neque dolorem distinctio, exercitationem vel id temporibus quis ut sequi totam, perspiciatis
+                        amet?
+                        Nesciunt, velit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, deleniti.
+                    </p>
+                    <div class="tab">
+                        <div class="tab-tittle">
+                            <p class="tab-link active-link" onclick="onTabClick('skill')">Kemampuan</p>
+                            <p class="tab-link " onclick="onTabClick('pengalaman')">Pengalaman</p>
+                            <p class="tab-link" onclick="onTabClick('pendidikan')">Pendidikan</p>
+                        </div>
+                        <hr>
+                        <div class="tab-content active-tab" id="skill">
+                            <ul>
+                                <li>
+                                    <span>HTML/CSS/JavaScript</span><br>
+                                    Membangun Aplikasi Web Statis
+                                </li>
+                                <li><span>Back End</span><br>Membuat Aplikai Berbasis CRUD</li>
+                                <li><span>Bahasa Inggris</span><br>Kemampuan Berbahasa Inggris yang baik </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pengalaman">
+                            <ul>
+                                <li>
+                                    <span>Projek RPL</span><br>
+                                    Bangun Rancangan Sistem Aplikasi
+                                </li>
+                                <li><span>UI/UX</span><br>Mendapat Juara 2 dalam Kompetisi tersebut</li>
+                                <li><span>Robotik</span><br>Merancang Alat Sistem Sederhana Berbasis Arduino</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pendidikan">
+                            <ul>
+                                <li>
+                                    <span>Universitas Halu Oleo</span><br>
+                                    S1 Teknik Informatia
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="btn">Selengkapnya >>></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="layanan">
+        <div class="container layanan-section">
+            <h1 class="sub-tittle">Layanan</h1>
+            <div class="layanan-list">
+                <div>
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam molestiae soluta dolore
+                        reiciendis consequuntur
+                        est,</p>
+                    <a href="#">selengkapnya</a>
+                </div>
+                <div>
+                    <i class='bx bxl-sketch'></i>
+                    <h2>UI UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam molestiae soluta dolore
+                        reiciendis consequuntur pariatur, laudantium quas tenetur numia
+                        est,</p>
+                    <a href="#">selengkapnya</a>
+                </div>
+                <div>
+                    <i class='bx bxl-apple'></i>
+                    <h2>App Mobile</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam molestiae soluta dolore
+                        reiciendis coumquam sequi suscipit dolor mollitia
+                        est,</p>
+                    <a href="#">selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portofolio">
+        <div class="container work-container">
+            <h1 class="sub-tittle">Karyaku</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work.jpg" alt="">
+                    <div class="layer">
+                        <h3>Undangan</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, minus!</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work.jpg" alt="">
+                    <div class="layer">
+                        <h3>game</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, minus!</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work.jpg" alt="">
+                    <div class="layer">
+                        <h3>uiux</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, minus!</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="but">
+                <a href="#" class="btn-work">selengkapnya</a>
+            </div>
+        </div>
+    </section>
+    <section id="galeri">
+        <div class="container">
+            <h1 class="sub-tittle">Galeri Saya</h1>
+            <div class="navigasi">
+                <span class="btn-galeri active-image" data-name="all">All</span>
+                <span class="btn-galeri" data-name="pantai">Pantai</span>
+                <span class="btn-galeri" data-name="gunung">Gunung</span>
+                <span class="btn-galeri" data-name="kampus">Kampus</span>
+                <span class="btn-galeri" data-name="lainnya">Lainnya</span>
+            </div>
+            <div class="galeri">
+                <div data-name="gunung">
+                    <img src="img/gunung/gunung1.jpg" alt="">
+                </div>
+                <div data-name="kampus">
+                    <img src="img/kampus/kampus5.png" alt="">
+                </div>
+                <div data-name="lainnya">
+                    <img src="img/lainnya/lainnya3.jpg" alt="">
+                </div>
+                <div data-name="pantai">
+                    <img src="img/pantai/pantai3.jpg" alt="">
+                </div>
+                <div data-name="lainnya">
+                    <img src="img/lainnya/lainnya1.jpg" alt="">
+                </div>
+                <div data-name="kampus">
+                    <img src="img/kampus/kampus2.jpg" alt="">
+                </div>
+                <div data-name="pantai">
+                    <img src="img/pantai/pantai4.jpg" alt="">
+                </div>
+                <div data-name="gunung">
+                    <img src="img/gunung/gunung3.jpg" alt="">
+                </div>
+                <div data-name="lainnya">
+                    <img src="img/lainnya/lainnya2.jpg" alt="">
+                </div>
+                <div data-name="kampus">
+                    <img src="img/kampus/kampus6.jpg" alt="">
+                </div>
+                <div data-name="gunung">
+                    <img src="img/gunung/gunung4.jpg" alt="">
+                </div>
+                <div data-name="lainnya">
+                    <img src="img/lainnya/lainnya4.jpg" alt="">
+                </div>
+                <div data-name="lainnya">
+                    <img src="img/lainnya/lainnya5.jpg" alt="">
+                </div>
+                <div data-name="gunung">
+                    <img src="img/gunung/gunung2.jpg" alt="">
+                </div>
+                <div data-name="kampus">
+                    <img src="img/kampus/kampus1.png" alt="">
+                </div>
+                <div data-name="kampus">
+                    <img src="img/kampus/kampus4.jpg" alt="">
+                </div>
+                <div data-name="kampus">
+                    <img src="img/kampus/kampus3.png" alt="">
+                </div>
+                <div data-name="pantai">
+                    <img src="img/pantai/pantai1.JPG" alt="">
+                </div>
+            </div>
+            <div class="show">
+                <div class="show-img">
+                    <div class="close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <img src="" alt="">
+                    <!-- <img src="img/gunung/gunung1.jpg" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="kontak">
+        <div class="container">
+            <div class="row">
+                <div class="col-left">
+                    <h1 class="sub-tittle">Hubungi Saya</h1>
+                    <p><i class='bx bx-mail-send'></i>laode.lukmana88@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i>081281331636</p>
+                    <div class="sosial-media">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+                <div class="col-right">
+                    <form action="">
+                        <input type="text" name="nama" placeholder="Nama kamu" required>
+                        <input type="email" name="email" placeholder="Email kamu" required>
+                        <textarea name="pesan" id="" cols="30" rows="10" placeholder="Pesan Kamu"></textarea>
+                        <button type="submit" class="btn">kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 - La Ode Lukmana</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
