@@ -145,6 +145,11 @@ window.onload = function () {
       close.onclick = function () {
         show.classList.remove("active");
       };
+      window.onclick = function (e) {
+        if (e.target == show) {
+          show.classList.remove("active");
+        }
+      };
     };
   }
 };
