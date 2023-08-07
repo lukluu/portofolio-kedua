@@ -626,6 +626,28 @@ img {
   cursor: pointer;
 }
 
+.nextprev .bx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: #fff;
+  cursor: pointer;
+}
+.next {
+  right: -100px;
+}
+.prev {
+  left: -100px;
+}
+@media screen and (max-width: 700px) {
+  .next {
+    right: 0px;
+  }
+  .prev {
+    left: 0px;
+  }
+}
 /* ---------------end GALERI--------------------- */
 /* ---------------kontak--------------------- */
 #kontak {

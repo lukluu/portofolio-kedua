@@ -133,20 +133,57 @@ const show = document.querySelector(".show");
 const close = show.querySelector(".close");
 window.onload = function () {
   for (let i = 0; i < galeri.length; i++) {
-    galeri[i].onclick = function () {
+    let index = i;
+    let clikImage;
+    galeri[index].onclick = function () {
+      clikImage = index;
       console.log(galeri[i]);
       function showImage() {
         let img = show.querySelector("img");
-        img.src = galeri[i].querySelector("img").src;
+        img.src = galeri[index].querySelector("img").src;
         console.log(img.src);
       }
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+      if (index == 0) {
+        prevBtn.style.display = "none";
+      }
+      if (index >= galeri.length - 1) {
+        nextBtn.style.display = "none";
+      }
+      prevBtn.onclick = function () {
+        index--;
+        if (index == 0) {
+          showImage();
+          prevBtn.style.display = "none";
+        } else {
+          nextBtn.style.display = "block";
+          showImage();
+        }
+      };
+      nextBtn.onclick = function () {
+        index++;
+        if (index >= galeri.length - 1) {
+          showImage();
+          nextBtn.style.display = "none";
+        } else {
+          prevBtn.style.display = "block";
+          showImage();
+        }
+      };
       showImage();
       show.classList.add("active");
       close.onclick = function () {
+        index = clikImage;
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "block";
         show.classList.remove("active");
       };
       window.onclick = function (e) {
         if (e.target == show) {
+          index = clikImage;
+          prevBtn.style.display = "block";
+          nextBtn.style.display = "block";
           show.classList.remove("active");
         }
       };
